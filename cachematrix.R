@@ -1,4 +1,6 @@
-## These two functions are written to make a special version of matrix and cache##the inverse of a Matrix to avoid repeatedly computing the inverse.
+## These two functions are written to make a special version of matrix and cache
+
+##the inverse of a Matrix to avoid repeatedly computing the inverse.
 
 ## The makeCacheMatrix function is designed to create a special "matrix" using 
 ## the initial matrix value of x, which is really a list containing a function to 
