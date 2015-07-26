@@ -1,6 +1,7 @@
-## These two functions are written to make a special version of matrix and cache the inverse of a Matrix to avoid repeatedly computing the inverse.
+## These two functions are written to make a special version of matrix and cache##the inverse of a Matrix to avoid repeatedly computing the inverse.
 
-## The makeCacheMatrix function is designed to create a special "matrix" using the initial matrix value of x, which is really a list containing a function to 
+## The makeCacheMatrix function is designed to create a special "matrix" using 
+## the initial matrix value of x, which is really a list containing a function to 
 ## 1. set the value of the matrix
 ## 2. get the value of the matrix
 ## 3. set the value of the inverse
@@ -13,7 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	set<-function(y){
 		x<<-y
 		m<<-NULL
-                ##if the value of set is updated, set m to be NULL again because                  the inverse would be calculated again.
+                ##if the value of set is updated, set m to be NULL again because                ##the inverse would be calculated again.
 	}
 	get<-function() x
 	setinv<-function(inv) m<<-inv
@@ -25,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##    The cacheSolve function returns a matrix that is the inverse of "x"
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x', be careful that here x is           the special matrix defined by function makeCacheMatrix
+        ## Return a matrix that is the inverse of 'x', be careful that here x is        ## the special matrix defined by function makeCacheMatrix
 	m<-x$getinv()
         ## m is used to store the inverse
 	if(!is.null(m)){
